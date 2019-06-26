@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>categories</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <div *ngFor="let n of Data">
+      <ion-card class="card-background-page">
+        <img src="{{n.icon}}" (click)="page1Page(n.categoryName, n.questions)"/>
+        <div class="card-title">
+          <p>{{n.categoryName}}</p>
+        </div>
+        <div class="card-subtitle">
+        </div>
+      </ion-card>
+    </div>
+    <!-- <div class="btn2">
+    <button ion-button block  (click)="page1Page()">Scores</button>
+  </div> -->
+<!-- </ion-content> -->

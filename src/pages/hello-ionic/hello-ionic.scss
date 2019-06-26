@@ -1,0 +1,31 @@
+page-hello-ionic {
+    
+     
+    ion-content {
+          .header {
+            text-align: center;
+            margin-top: 35%;
+           font-weight: bold;
+            
+        }
+        h1 {
+            font-size: 6vh;
+            color: #4fa9cc;
+        
+            margin-top: -25%;
+        }
+        .btns {
+            margin-top: 20%;
+        }
+        .btn2 {
+            margin-top: 5%;
+        }
+        button {
+            letter-spacing: 2px;
+            font-size: 5vh;
+            margin-top: 5%; 
+         
+        }
+    }
+    
+}

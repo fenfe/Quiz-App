@@ -1,0 +1,30 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+  <ion-slides #slides pager>
+    <ion-slide *ngFor="let n of questions">
+      <h1> {{n.question}} </h1>
+        <div class="container">
+            <div *ngFor="let b of n.options">
+              <img src="{{b.option}}" alt="" (click)="getAnswer(b.correct)">
+            </div>
+          </div>
+    </ion-slide>
+
+    <div class="slide">
+    <ion-slide>
+      <button ion-button full (click)="seeTotal()">See Score</button>
+    </ion-slide>
+  </div>
+  </ion-slides>
+
+<img src="">
+</ion-content>
+
+ 
+
